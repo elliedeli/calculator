@@ -1,0 +1,40 @@
+body {
+    display:flex;
+    justify-content: center;
+}
+
+#calcContainer {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#containers{
+    display:flex;
+    justify-content: center;
+    
+    background-color: #d0d8d3;
+}
+
+#display {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#displayContainer{
+    display:flex;
+    margin-bottom: 1%;
+    background-color: #8ea395;
+}
+
+#digitsContainer {
+    display:flex;
+    flex-wrap:wrap;
+    flex-basis:70px;
+}
+
+#operatorsContainer {
+    display:flex;
+    flex-direction: column;
+}
