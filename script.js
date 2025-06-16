@@ -74,11 +74,12 @@ function clearDisplay(){
 //calculator elements creation functions 
 function createDigits(){
     let digitsContainer = document.querySelector("#digitsContainer");
-    let digits = [7,8,9,4,5,6,1,2,3,0,"."]
+    let digits = [7,8,9,4,5,6,1,2,3,0,".", '<i class="fas fa-backspace"></i>']
     for(let i =0; i < digits.length; i++)
     {
     const newDigit = document.createElement("button");
-    newDigit.textContent = digits[i];
+    newDigit.innerHTML = digits[i];
+    newDigit.style.width = "30%";
     newDigit.setAttribute('id', 'digit');
     digitsContainer.appendChild(newDigit);
     }
@@ -90,6 +91,11 @@ function createOperators(){
     for (const operator of operators){
         const newOperator = document.createElement("button");
         newOperator.textContent = operator;
+        if (operator == "Clear") {
+            newOperator.style.backgroundColor = "#cb4237";
+        }
+        
+
         newOperator.setAttribute('id','operator');
         operatorsContainer.appendChild(newOperator);
     }

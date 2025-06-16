@@ -1,40 +1,101 @@
+* {
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+}
+
 body {
     display:flex;
     justify-content: center;
+    align-items: center;
+    background-color: #baaea4;
+    margin:0;
+    padding: 0;
 }
 
 #calcContainer {
+    margin: 3%;
     display:flex;
     flex-direction: column;
     align-items: center;
+    background-color: #d4dbe0;
+    padding:1%;
+    box-sizing: content-box;
+    border: 0.3em solid #7b7c7e;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px rgba(99,99,79,0.4)
 }
 
 #containers{
     display:flex;
     justify-content: center;
-    
-    background-color: #d0d8d3;
+    height:80%;
+    gap: 2%;
 }
 
 #display {
     width: 100px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #displayContainer{
     display:flex;
-    margin-bottom: 1%;
+    justify-content: space-between;
+    align-self: stretch;
+    margin-bottom: 3%;
+    border-radius: 20px;
+    border: 5px solid #686a6e;
     background-color: #8ea395;
+    box-shadow: inset 0px 0px 10px 10px rgba(99,99,79,0.4)
 }
 
 #digitsContainer {
     display:flex;
     flex-wrap:wrap;
-    flex-basis:70px;
+    flex: 1;
 }
 
 #operatorsContainer {
     display:flex;
     flex-direction: column;
+}
+
+#digit
+{
+    background-color: #222527;
+    color: #eef5fa;
+    
+}
+
+#operator
+{
+    background-color: #7b7c7e;
+    color: #eef5fa;
+    padding:10px 0px;
+    font-size: 50px;
+}
+
+#operatorDisplay
+{
+    font-weight: normal;
+    font-size:5px;
+    text-align: right;
+    color:#686a6e;
+    padding:1px;
+}
+
+button {
+    border: 1px solid #686a6e;
+    border-radius: 20px;
+    margin:1%;
+    font-size: 50px;
+    
+}
+i {
+    font-size: 40px;
+}
+button:hover{
+   box-shadow: 0px 0px 2px 2px rgba(99,99,79,0.4)
+    
 }
